@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>v10</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>MY-CV</title>
+    <link href='styles.css' rel='stylesheet'>
+    <script src='https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js'></script>
+    <script>
+      const firebaseConfig = {       
+        apiKey: "AIzaSyAtABHYMrBLich7vGedXQ4F3ahBgv07eDU",
+        authDomain: "dragonson-46c50.firebaseapp.com",
+        databaseURL: "https://dragonson-46c50-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "dragonson-46c50",
+        storageBucket: "dragonson-46c50.firebasestorage.app",
+        messagingSenderId: "595136654471",
+        appId: "1:595136654471:web:54a4fe587c730fa3bd9c22",
+        measurementId: "G-0NV8EQ508S"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+    </script>
+  </head>
+  <body class='ready'>
+    <div id='ready'>
+      <img alt='Logo' id='logo' src='data:image/jpeg;base64,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'>
+      <input id='password-input' placeholder='Type the password' type='password'>
+      <a href='#' id='toggle-password' onclick='return false;'>Show</a>
+    </div>
+    <div class='status' id='error'>Ops, try again!</div>
+    <div class='status' id='success'>Yeah! Welcome!</div>
+    <script src='script.js'></script>
+  </body>
+</html>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</body>
+</html>
