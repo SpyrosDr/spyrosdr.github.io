@@ -11,8 +11,8 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
 
       // 🔁 Map keys from Firebase to HTML element IDs
       const contentMap = {
-        title: 'title',             // <h1 id="title"></h1>
-        paragraph: 'paragraph',     // <p id="paragraph"></p>
+        name: 'name',             // <h1 id="name"></h1>
+        message: 'message',     // <p id="message"></p>
         phone: 'phone',             // <span id="phone"></span>
         email: 'email',             // <span id="email"></span>
         location: 'location',       // <span id="location"></span>
