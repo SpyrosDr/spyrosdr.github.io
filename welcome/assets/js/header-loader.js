@@ -7,15 +7,39 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
   firebase.database().ref('secureContent').once('value')
     .then((snapshot) => {
       const data = snapshot.val();
-      const container = document.getElementById('header-content');
-      if (data && container) {
-        container.innerHTML = `
+      if (!data) return;
+
+      // 🔁 Map keys from Firebase to HTML element IDs
+      const contentMap = {
+        title: 'title',             // <h1 id="title"></h1>
+        paragraph: 'paragraph',     // <p id="paragraph"></p>
+        phone: 'phone',             // <span id="phone"></span>
+        email: 'email',             // <span id="email"></span>
+        location: 'location',       // <span id="location"></span>
+        greeting: 'greeting',       // <p id="greeting"></p>
+        cv: 'cvtext',               // <div id="cvtext"></div>
+        // Add more as needed
+      };
+
+      // 🔁 Loop through and update elements
+      Object.entries(contentMap).forEach(([key, elementId]) => {
+        const el = document.getElementById(elementId);
+        if (el && data[key]) {
+          el.textContent = data[key];
+        }
+      });
+
+      // 🔁 Optional: innerHTML for header section if needed
+      const header = document.getElementById('header-content');
+      if (header && data.title && data.paragraph) {
+        header.innerHTML = `
           <h1>${data.title}</h1>
           <p>${data.paragraph}</p>
         `;
       }
+
     })
     .catch((error) => {
-      console.error('❌ Failed to load header content:', error);
+      console.error('❌ Failed to load secure content:', error);
     });
 }
