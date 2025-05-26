@@ -4,7 +4,7 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
   window.location.href = '/';
 } else {
   // ✅ Authenticated — load header content from Firebase
-  firebase.database().ref('headerContent').once('value')
+  firebase.database().ref('secureContent').once('value')
     .then((snapshot) => {
       const data = snapshot.val();
       const container = document.getElementById('header-content');
