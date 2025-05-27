@@ -15,6 +15,7 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         message: 'message',     // <span id="message"></span>
         phone: 'phone',             // <span id="phone"></span>
         email: 'email',             // <span id="email"></span>
+        image1des: 'image1des',
         // Add more as needed
       };
 
