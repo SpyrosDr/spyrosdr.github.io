@@ -48,6 +48,14 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         `;
       }
 
+      // ✅ Update contact links once data is available
+      if (data.phone) {
+        document.getElementById('call-button')?.setAttribute('href', `tel:${data.phone}`);
+      }
+      if (data.email) {
+        document.getElementById('email-button')?.setAttribute('href', `mailto:${data.email}`);
+      }
+
     })
     .catch((error) => {
       console.error('❌ Failed to load secure content:', error);
