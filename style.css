@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background: url('/welcome/images/bg.jpg') no-repeat center center fixed;;
+  background: black;
   font-family: "Inconsolata", monospace;
   overflow: hidden;
   transition: background 0.3s ease-in-out;
