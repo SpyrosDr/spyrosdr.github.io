@@ -12,7 +12,6 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
       // 🔁 Map keys from Firebase to HTML element IDs
       const contentMap = {
         name: 'name',             // <span id="name"></span>
-        name: 'name', 
         message: 'message',     // <span id="message"></span>
         phone: 'phone',             // <span id="phone"></span>
         email: 'email',             // <span id="email"></span>
@@ -23,12 +22,21 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         // Add more as needed
       };
 
-      // 🔁 Loop through and update elements
-      Object.entries(contentMap).forEach(([key, elementId]) => {
-        const el = document.getElementById(elementId);
-        if (el && data[key]) {
+      // 🔁 Loop through and update elements IDs
+      //Object.entries(contentMap).forEach(([key, elementId]) => {
+        //const el = document.getElementById(elementId);
+        //if (el && data[key]) {
+          //el.textContent = data[key];
+        //}
+      //});
+      
+      // 🔁 Loop through and update elements Classes
+      Object.entries(contentMap).forEach(([key, className]) => {
+        const elements = document.querySelectorAll(`.${className}`);
+        if (!elements.length || !data[key]) return;
+        elements.forEach(el => {
           el.textContent = data[key];
-        }
+        });
       });
 
       // 🔁 Optional: innerHTML for header section if needed
