@@ -15,7 +15,7 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         message: 'message',     // <p id="message"></p>
         phone: 'phone',             // <span id="phone"></span>
         email: 'email',             // <span id="email"></span>
-        location: 'location',       // <span id="location"></span>
+        image-1: 'image-1',       // <span id="location"></span>
         greeting: 'greeting',       // <p id="greeting"></p>
         cv: 'cvtext',               // <div id="cvtext"></div>
         // Add more as needed
