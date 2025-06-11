@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           phone: 'phone',             // <span id="phone"></span>
           email: 'email',             // <span id="email"></span>
           image1des: 'image1des',
+          aboutmetitle1: 'aboutmetitle1',
           aboutme1: 'aboutme1',
           aboutmetitle2: 'aboutmetitle2',
           aboutme2: 'aboutme2',
