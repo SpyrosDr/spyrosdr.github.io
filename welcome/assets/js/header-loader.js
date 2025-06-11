@@ -1,3 +1,5 @@
+// Wrapping code inside DOMContentLoaded event so that JS doesnt't run before the HTML is ready
+document.addEventListener("DOMContentLoaded", () => {
 // First check if user is authenticated (using sessionStorage)
 if (sessionStorage.getItem('authenticated') !== 'true') {
   // ❌ Not authenticated — redirect to main page
@@ -73,3 +75,7 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
       console.error('❌ Failed to load secure content:', error);
     });
 }
+
+//The foollowing closes the DOMContentLoaded event  
+});  
+                          
