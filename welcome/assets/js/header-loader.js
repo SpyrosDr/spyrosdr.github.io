@@ -17,11 +17,11 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         email: 'email',             // <span id="email"></span>
         image1des: 'image1des',
         aboutme1: 'aboutme1',
-        aboutme1: 'aboutmetitle2',
+        aboutmetitle2: 'aboutmetitle2',
         aboutme2: 'aboutme2',
-        aboutme1: 'aboutmetitle3',
+        aboutmetitle3: 'aboutmetitle3',
         aboutme3: 'aboutme3',
-        aboutme1: 'aboutmetitle4',
+        aboutmetitle4: 'aboutmetitle4',
         aboutme4: 'aboutme4'
         // Add more as needed
       };
