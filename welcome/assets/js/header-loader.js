@@ -8,6 +8,22 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
   // ✅ Authenticated — load header content from Firebase
   firebase.database().ref('secureContent').once('value')
     .then((snapshot) => {
+      let data = snapshot.val();
+      
+      console.log('🔍 Raw data from Firebase:', data);
+      console.log('📦 Type of data:', typeof data);
+
+      try {
+        if (typeof data === 'string') {
+          data = JSON.parse(data);
+          console.log('✅ Parsed Firebase string into object');
+        }
+      } catch (err) {
+        console.error('❌ Failed to parse Firebase data:', err);
+        return;
+      }
+
+      if (!data) return;
       const data = snapshot.val();
       if (!data) return;
 
