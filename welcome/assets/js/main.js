@@ -397,9 +397,9 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
-// Contact actions
-document.getElementById('call-button')?.setAttribute('href', `tel:${data.phone}`);
-document.getElementById('email-button')?.setAttribute('href', `mailto:${data.email}`);
+// Contact actions //duplicate in header-loader.js
+//document.getElementById('call-button')?.setAttribute('href', `tel:${data.phone}`);
+//document.getElementById('email-button')?.setAttribute('href', `mailto:${data.email}`);
 
 
 })(jQuery);
