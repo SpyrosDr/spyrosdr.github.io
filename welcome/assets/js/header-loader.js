@@ -34,16 +34,20 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
       //Object.entries(contentMap).forEach(([key, elementId]) => {
         //const el = document.getElementById(elementId);
         //if (el && data[key]) {
-          //el.textContent = data[key];
+          //el.innerHTML = data[key];
         //}
       //});
       
       // 🔁 Loop through and update elements Classes
       Object.entries(contentMap).forEach(([key, className]) => {
         const elements = document.querySelectorAll(`.${className}`);
-        if (!elements.length || !data[key]) return;
+        if (!elements.length || !data[key]) {
+          console.warn(`⚠️ Missing: class=${className}, data[${key}]`);
+          return;
+        }
         elements.forEach(el => {
-          el.textContent = data[key];
+          el.innerHTML = data[key];
+          console.log(`✅ Injected ${key} into .${className}`);
         });
       });
 
