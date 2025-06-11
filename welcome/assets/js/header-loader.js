@@ -20,9 +20,13 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
         aboutmetitle2: 'aboutmetitle2',
         aboutme2: 'aboutme2',
         aboutmetitle3: 'aboutmetitle3',
-        aboutme3: 'aboutme3',
+        aboutme31: 'aboutme31',
+        aboutme32: 'aboutme32',
+        aboutme33: 'aboutme33',
         aboutmetitle4: 'aboutmetitle4',
-        aboutme4: 'aboutme4'
+        aboutme41: 'aboutme41',
+        aboutme42: 'aboutme42',
+        aboutme43: 'aboutme43'
         // Add more as needed
       };
 
