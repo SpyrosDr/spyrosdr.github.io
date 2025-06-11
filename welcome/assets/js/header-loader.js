@@ -43,8 +43,13 @@ if (sessionStorage.getItem('authenticated') !== 'true') {
       // 🔁 Loop through and update elements Classes
       Object.entries(contentMap).forEach(([key, className]) => {
         const elements = document.querySelectorAll(`.${className}`);
-        if (!elements.length || !data[key]) {
-          console.warn(`⚠️ Missing: class=${className}, data[${key}]`);
+        //If the conditions aren't split it's harder to troubleshoot
+        if (!data[key]) {
+          console.warn(`⚠️ Firebase data missing for key: ${key}`);
+          return;
+        }
+        if (!elements.length) {
+          console.warn(`⚠️ No elements found with class: ${className}`);
           return;
         }
         elements.forEach(el => {
