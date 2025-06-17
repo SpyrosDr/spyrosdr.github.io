@@ -45,7 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
           aboutme42: 'aboutme42',
           aboutme43: 'aboutme43',
           aboutmetitle5: 'aboutmetitle5',
-          aboutme51: 'aboutme51'
+          aboutme51: 'aboutme51',
+          cv_1_00: 'cv_1_00',
+          cv_2_00: 'cv_2_00',
+          cv_2_01: 'cv_2_01',
+          cv_2_02: 'cv_2_02',
+          cv_2_03: 'cv_2_03'
           // Add more as needed
         };
 
