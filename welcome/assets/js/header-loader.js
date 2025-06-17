@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
           cv_2_41: 'cv_2_41',
           cv_2_42: 'cv_2_42',
           cv_2_43: 'cv_2_43',
-          cv_2_44: 'cv_2_44',
+          cv_2_44: 'cv_2_44'
           // Add more as needed
         };
 
