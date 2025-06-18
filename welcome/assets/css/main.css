@@ -1680,7 +1680,8 @@ input, select, textarea {
 .chevron {
   transition: transform 0.3s ease;
   display: inline-block;
-  margin-right: 0.5em;
+  margin-right: 0.3em;
+  font-size: 1em;
 }
 
 .collapsible-header.active .chevron {
