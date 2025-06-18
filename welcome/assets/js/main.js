@@ -401,5 +401,12 @@
 //document.getElementById('call-button')?.setAttribute('href', `tel:${data.phone}`);
 //document.getElementById('email-button')?.setAttribute('href', `mailto:${data.email}`);
 
+//Collapsible header	
+document.querySelectorAll('.collapsible-header').forEach(header => {
+  header.addEventListener('click', () => {
+    header.classList.toggle('active');
+  });
+});
+
 
 })(jQuery);
