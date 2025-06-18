@@ -1677,12 +1677,14 @@ input, select, textarea {
   color: #cccccc;
 }
 
-.collapsible-icon {
-  transition: transform 0.2s ease;
+.chevron {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-right: 0.5em;
 }
 
-.collapsible-header.active .collapsible-icon {
-  transform: rotate(90deg);
+.collapsible-header.active .chevron {
+  transform: rotate(180deg);
 }
 
 .collapsible-content {
