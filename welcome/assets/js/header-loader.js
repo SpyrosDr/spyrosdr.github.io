@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           elements.forEach(el => {
             if (typeof data[key] === 'object' && data[key].url && data[key].text) {
-              el.innerHTML = `${data[key].text} <a href="${data[key].url}" target="_blank" rel="noopener">[link]</a>`;
+              el.innerHTML = `<a href="${data[key].url}" target="_blank" rel="noopener">${data[key].text}</a>`;
             } else {
               el.innerHTML = data[key];
             }
