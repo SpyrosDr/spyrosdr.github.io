@@ -1684,7 +1684,7 @@ input, select, textarea {
 }
 
 .collapsible-header.active .chevron {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .collapsible-content {
