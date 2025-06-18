@@ -1663,23 +1663,26 @@ input, select, textarea {
 /* Collapsible Section */
 .collapsible-header {
   cursor: pointer;
-  padding: 1rem;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  padding: 0.75em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.collapsible-header:hover {
+  color: #cccccc;
 }
 
 .collapsible-content {
   display: none;
-  padding: 1rem;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  border-radius: 0 0 4px 4px;
-  background-color: rgba(255, 255, 255, 0.025);
+  margin-top: 0.5em;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #dddddd;
 }
 
 .collapsible-header.active + .collapsible-content {
   display: block;
 }
+
