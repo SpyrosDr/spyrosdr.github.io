@@ -1678,7 +1678,6 @@ input, select, textarea {
 }
 
 .collapsible-icon {
-  display: inline-block;
   transition: transform 0.2s ease;
 }
 
