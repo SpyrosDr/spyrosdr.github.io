@@ -1675,6 +1675,7 @@ input, select, textarea {
 
 .collapsible-header:hover {
   color: #cccccc;
+  text-decoration: underline;
 }
 
 .chevron {
