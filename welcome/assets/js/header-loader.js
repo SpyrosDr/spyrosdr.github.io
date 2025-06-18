@@ -113,7 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
           elements.forEach(el => {
-            el.innerHTML = data[key];
+            if (typeof data[key] === 'object' && data[key].url && data[key].text) {
+              el.innerHTML = `${data[key].text} <a href="${data[key].url}" target="_blank" rel="noopener">[link]</a>`;
+            } else {
+              el.innerHTML = data[key];
+            }
             console.log(`✅ Injected ${key} into .${className}`);
           });
         });
