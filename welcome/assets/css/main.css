@@ -1663,7 +1663,7 @@ input, select, textarea {
 /* Collapsible Section */
 .collapsible-header {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff;
   margin-top: 1em;
   margin-bottom: 0.5em;
