@@ -1662,47 +1662,48 @@ input, select, textarea {
 
 /* Collapsible Section */
 .collapsible-header {
-  cursor: pointer;
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 0em; /* used to be 1em */
-  margin-bottom: 0em; /* used to be 0.5em */
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  transition: color 0.3s;
+	cursor: pointer;
+  	font-weight: 400;
+  	color: #ffffff;
+  	margin-top: 0em; /* used to be 1em */
+  	margin-bottom: 0em; /* used to be 0.5em */
+  	display: flex;
+  	align-items: center;
+  	gap: 0.5em;
+  	transition: color 0.3s;
 }
 
 .collapsible-header:hover {
-  color: #cccccc;
-  text-decoration: underline;
+  	color: #cccccc;
+  	text-decoration: underline;
 }
 
 .chevron {
-  transition: transform 0.3s ease;
-  display: inline-block;
-  margin-right: 0.3em;
-  font-size: 1em;
+	transition: transform 0.3s ease;
+	display: inline-block;
+  	margin-right: 0.3em;
+  	font-size: 1em;
+  	transform: scale(0.8); /* Shrink icon size */
 }
 
 .collapsible-header.active .chevron {
-  transform: rotate(90deg);
+	transform: rotate(90deg) scale(0.8); /* Maintain scale on rotation */
 }
 
 .collapsible-content {
-  display: none;
-  font-size: 0.95em;
-  line-height: 1.6;
-  color: #dddddd;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  	display: none;
+  	font-size: 0.95em;
+  	line-height: 1.6;
+  	color: #dddddd;
+  	margin-top: 0.2em;
+  	margin-bottom: 0.2em;
 }
 
 .collapsible-content p {
-  margin-bottom: 0.5rem;
+  	margin-bottom: 0.5rem;
 }
 
 .collapsible-header.active + .collapsible-content {
-  display: block;
+  	display: block;
 }
 
