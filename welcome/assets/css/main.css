@@ -1703,7 +1703,8 @@ input, select, textarea {
 }
 
 .collapsible-content p {
-  	margin-bottom: 0.5rem;
+	margin: 0;
+  	padding: 0;
 }
 
 .collapsible-header.active + .collapsible-content {
