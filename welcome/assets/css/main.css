@@ -1666,7 +1666,7 @@ input, select, textarea {
   font-weight: 400;
   color: #ffffff;
   #margin-top: 1em;
-  margin-bottom: 0.5em;
+  #margin-bottom: 0.5em;
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -1694,7 +1694,7 @@ input, select, textarea {
   font-size: 0.95em;
   line-height: 1.6;
   color: #dddddd;
-  margin-bottom: 1em;
+  #margin-bottom: 1em;
 }
 
 .collapsible-header.active + .collapsible-content {
