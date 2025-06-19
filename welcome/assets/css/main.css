@@ -1698,6 +1698,10 @@ input, select, textarea {
   margin-bottom: 0.2em;
 }
 
+.collapsible-content p {
+  margin-bottom: 0.5rem;
+}
+
 .collapsible-header.active + .collapsible-content {
   display: block;
 }
