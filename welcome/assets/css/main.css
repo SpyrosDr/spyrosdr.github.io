@@ -1665,8 +1665,8 @@ input, select, textarea {
   cursor: pointer;
   font-weight: 400;
   color: #ffffff;
-  #margin-top: 1em;
-  #margin-bottom: 0.5em;
+  margin-top: 0em; /* used to be 1em */
+  margin-bottom: 0em; /* used to be 0.5em */
   display: flex;
   align-items: center;
   gap: 0.5em;
