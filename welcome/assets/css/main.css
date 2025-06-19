@@ -1695,8 +1695,11 @@ input, select, textarea {
   	font-size: 0.95em;
   	line-height: 1.6;
   	color: #dddddd;
-  	margin-top: 0; /* used to be 0.2em */
-  	margin-bottom: 0; /* used to be 0.2em */
+  	/* margin-top: 0; /* used to be 0.2em */
+  	/* margin-bottom: 0; /* used to be 0.2em */
+	margin: 0;
+  	padding: 0;
+  	border: 0;
 }
 
 .collapsible-content p {
