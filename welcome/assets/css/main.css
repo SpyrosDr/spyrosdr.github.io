@@ -1716,3 +1716,23 @@ input, select, textarea {
   margin: 0 0 0.5em 0;
   padding: 0;
 }
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between title and line */
+  margin: 2em 0 1em 0; /* Optional spacing */
+}
+
+.section-divider h3 {
+  margin: 0;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.section-divider .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc; /* Adjust color as needed */
+  opacity: 0.3;            /* Optional: fade look */
+}
