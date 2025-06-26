@@ -1717,6 +1717,12 @@ input, select, textarea {
   padding: 0;
 }
 
+.vertical-line-section {
+  border-left: 3px solid rgba(255, 255, 255, 0.2); /* Subtle line */
+  padding-left: 1rem;
+  margin: 1em 0;
+}
+
 .section-divider {
   display: flex;
   align-items: center;
