@@ -1735,3 +1735,22 @@ input, select, textarea {
   height: 1px;
   background-color: #ccc; /* Adjust color as needed */
 }
+
+/* Primary Divider (boldest) */
+.subsection-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 1.2em 0;
+}
+
+/* Secondary Divider (lighter or dashed) */
+.subsub-divider {
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  margin: 0.8em 0;
+}
+
+/* Tertiary Divider (very subtle, dotted or short) */
+.subsubsub-divider {
+  border-top: 1px dotted rgba(255, 255, 255, 0.07);
+  width: 50%;
+  margin: 0.5em 0;
+}
