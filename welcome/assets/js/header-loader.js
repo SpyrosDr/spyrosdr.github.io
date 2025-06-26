@@ -101,13 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
           cv_3_14: 'cv_3_14',
           cv_3_15: 'cv_3_15',
           cv_3_16: 'cv_3_16',
-          cv_3_17: 'cv_3_17',
-          cv_3_18: 'cv_3_18',
-          cv_3_19: 'cv_3_19',
-          cv_3_20: 'cv_3_20',
-          cv_3_21: 'cv_3_21',
-          cv_3_22: 'cv_3_22',
-          cv_3_23: 'cv_3_23',
+          cv_4_01: 'cv_4_01',
+          cv_4_02: 'cv_4_02',
+          cv_4_03: 'cv_4_03',
+          cv_4_04: 'cv_4_04'
           // Add more as needed
         };
 
