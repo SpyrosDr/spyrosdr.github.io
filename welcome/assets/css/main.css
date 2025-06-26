@@ -1734,5 +1734,4 @@ input, select, textarea {
   flex-grow: 1;
   height: 1px;
   background-color: #ccc; /* Adjust color as needed */
-  opacity: 0.3;            /* Optional: fade look */
 }
