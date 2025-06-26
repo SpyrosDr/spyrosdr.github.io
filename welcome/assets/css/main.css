@@ -1711,3 +1711,8 @@ input, select, textarea {
   	display: block;
 }
 
+/* CV */
+#cv p {
+  margin: 0;
+  padding: 0;
+}
