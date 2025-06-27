@@ -1711,6 +1711,13 @@ input, select, textarea {
   	display: block;
 }
 
+.nested-line {
+  display: none;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15); /* only appears on expand */
+  margin-left: 0.5rem;
+}
+
 /* CV */
 #cv p {
   margin: 0 0 0.5em 0;
