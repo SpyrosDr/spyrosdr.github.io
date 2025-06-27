@@ -1711,12 +1711,18 @@ input, select, textarea {
   	display: block;
 }
 
+/* OUTER nested-line (1st level) */
 .nested-line {
-  display: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.2); /* thicker line */
+}
+
+/* INNER nested-line inside another nested-line (2nd level) */
+.nested-line .nested-line {
+  border-left: 1px solid rgba(255, 255, 255, 0.15); /* thinner line */
   padding-left: 1rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.15); /* only appears on expand */
   margin-left: 0.5rem;
 }
+
 
 /* CV */
 #cv p {
