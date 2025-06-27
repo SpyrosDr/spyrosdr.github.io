@@ -1713,21 +1713,24 @@ input, select, textarea {
 
 /* OUTER nested-line (1st level) */
 .nested-line {
-  border-left: 2px solid rgba(255, 255, 255, 0.2); /* thicker line */
+	border-left: 2px solid rgba(255, 255, 255, 0.2); /* thicker line */
+	padding-left: 1rem;
+  	margin-left: 0.5rem;
+	
 }
 
 /* INNER nested-line inside another nested-line (2nd level) */
 .nested-line .nested-line {
-  border-left: 1px solid rgba(255, 255, 255, 0.15); /* thinner line */
-  padding-left: 1rem;
-  margin-left: 0.5rem;
+	border-left: 1px solid rgba(255, 255, 255, 0.15); /* thinner line */
+	padding-left: 1rem;
+	margin-left: 0.5rem;
 }
 
 
 /* CV */
 #cv p {
-  margin: 0 0 0.5em 0;
-  padding: 0;
+	margin: 0 0 0.5em 0;
+	padding: 0;
 }
 
 .vertical-line-section {
