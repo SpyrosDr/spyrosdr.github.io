@@ -1723,6 +1723,13 @@ input, select, textarea {
   margin: 1em 0;
 }
 
+.vertical-line {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  margin-left: 1em;
+  padding-left: 1.5em;
+  margin-bottom: 2em; /* spacing between items */
+}
+
 .vertical-line .vertical-line {
   border-left: 1px solid rgba(255, 255, 255, 0.15); /* thinner for deeper level */
   padding-left: 1rem;
