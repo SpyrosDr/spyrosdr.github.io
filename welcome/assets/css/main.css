@@ -1771,3 +1771,21 @@ input, select, textarea {
   background-color: #ccc; /* Adjust color as needed */
 }
 
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2em;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-text {
+  flex: 1;
+}
