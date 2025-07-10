@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
           cv_5_18: 'cv_5_18',
           cv_5_19: 'cv_5_19',
           cv_5_20: 'cv_5_20',
+          profile_photo: 'profile-photo',
           // Add more as needed
         };
 
@@ -153,11 +154,22 @@ document.addEventListener("DOMContentLoaded", () => {
           elements.forEach(el => {
             if (typeof data[key] === 'object' && data[key].url && data[key].text) {
               el.innerHTML = `<a href="${data[key].url}" target="_blank" rel="noopener">${data[key].text}</a>`;
+            } else if (el.tagName === 'IMG' && typeof data[key] === 'string') {
+              el.src = data[key];
+              console.log(`🖼️ Injected image source into <img>.${className}`);
             } else {
               el.innerHTML = data[key];
             }
             console.log(`✅ Injected ${key} into .${className}`);
           });
+          // 📸 Image handling — insert image if className or key relates to image
+          if (className.startsWith('image') || className.includes('photo')) {
+            const imgEl = document.getElementById(className) || document.querySelector(`.${className}`);
+            if (imgEl && typeof data[key] === 'string') {
+              imgEl.src = data[key];
+              console.log(`🖼️ Injected image source into #${className} or .${className}`);
+            }
+          }
         });
 
         // 🔁 Optional: innerHTML for header section if needed
