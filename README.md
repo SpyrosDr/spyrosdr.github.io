@@ -37,7 +37,6 @@ A minimalist **personal resume website**, built with **HTML5 UP templates** and 
 ## 🚀 Deployment Guide
 
 ### 1. Clone the Repository
-```bash
 git clone https://github.com/SpyrosDr/spyrosdr.github.io
 cd spyrosdr.github.io
 
