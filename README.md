@@ -56,8 +56,6 @@ cd spyrosdr.github.io
 6. Go to **Project Settings** → **General** → **Your Apps** and add a **Web App**.
 7. Copy the Firebase config snippet provided.
 
----
-
 ### 3. Update Firebase Config in `main.js`
 Open your project’s `main.js` and replace the Firebase configuration with your own:
 ```javascript
@@ -73,7 +71,16 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+ ```
 Make sure the database path and the key in your authentication fetch logic match /auth/password.
 
+### 4. Deploy via GitHub Pages
 
+### 🙌 Credits
+HTML5 UP — For the free, beautifully designed HTML/CSS templates.
+
+Firebase Realtime Database — For lightweight, real-time data storage used in the password gate.
+
+GitHub Pages — For free static hosting directly from the repository.
+
+CodePen — For quick prototyping and code snippets used in building UI components.
