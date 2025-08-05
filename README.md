@@ -77,7 +77,7 @@ Make sure the database path and the key in your authentication fetch logic match
 ### 4. Deploy via GitHub Pages
 
 ### 🙌 Credits
-- **HTML5 UP** — For the free, beautifully designed HTML/CSS templates.
+- **[HTML5 UP](https://html5up.net/)** — For the free, beautifully designed HTML/CSS templates.
 
 -Firebase Realtime Database — For lightweight, real-time data storage used in the password gate.
 
