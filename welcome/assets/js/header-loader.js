@@ -128,6 +128,16 @@ document.addEventListener("DOMContentLoaded", () => {
           cv_5_19: 'cv_5_19',
           cv_5_20: 'cv_5_20',
           skill_01: 'skill_01',
+          skill_02: 'skill_02',
+          skill_03: 'skill_03',
+          skill_04: 'skill_04',
+          skill_05: 'skill_05',
+          skill_06: 'skill_06',
+          skill_07: 'skill_07',
+          skill_08: 'skill_08',
+          skill_09: 'skill_09',
+          skill_10: 'skill_10',
+          skill_11: 'skill_11',
           profile_photo: 'profile-photo',
           // Add more as needed
         };
