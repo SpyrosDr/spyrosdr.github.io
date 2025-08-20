@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
           cv_5_18: 'cv_5_18',
           cv_5_19: 'cv_5_19',
           cv_5_20: 'cv_5_20',
+          skill_01: 'skill_01',
           profile_photo: 'profile-photo',
           // Add more as needed
         };
