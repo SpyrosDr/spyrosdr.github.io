@@ -1792,7 +1792,7 @@ input, select, textarea {
 
 .bar-container {
   width: 100%;
-  background: #eee;
+  background: transparent;
   border-radius: 8px;
   margin: 10px 0;
   overflow: hidden;
@@ -1808,3 +1808,4 @@ input, select, textarea {
   white-space: nowrap;
   transition: width 1s ease-in-out;
 }
+
