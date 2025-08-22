@@ -1789,3 +1789,22 @@ input, select, textarea {
 .profile-text {
   flex: 1;
 }
+
+.bar-container {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.bar {
+  height: 30px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: #fff;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: width 1s ease-in-out;
+}
