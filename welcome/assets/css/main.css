@@ -1809,3 +1809,40 @@ input, select, textarea {
   transition: width 1s ease-in-out;
 }
 
+/* Projects */
+/* Grid container */
+.projects { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1.5rem; 
+}
+
+/* Each card */
+.card { 
+  background: #fff; 
+  border: 1px solid #ddd; 
+  padding: 1.25rem; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+/* Hover effect */
+.card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12); 
+}
+
+/* Project titles */
+.card h3 { 
+  margin: 0 0 0.5rem; 
+  font-size: 1.2rem; 
+  color: #222; 
+}
+
+/* Project description */
+.card p { 
+  margin: 0; 
+  font-size: 0.95rem; 
+  color: #555; 
+}
