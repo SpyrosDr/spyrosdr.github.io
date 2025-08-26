@@ -1822,33 +1822,34 @@ input, select, textarea {
 
 /* Blue card style */
 .projects .card {
-  background: #1e3a8a;              /* deep blue background */
-  color: #fff;                      /* white text */
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	background: #4A90E2;              /* deep blue background */
+	color: #fff;                      /* white text */
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Hover effect */
 .projects .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /* Title inside card */
 .projects .card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
+	margin: 0 0 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
 }
 
 /* Description */
 .projects .card p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #e0e7ff; /* light blue text for softer contrast */
+	margin: 0;
+	font-size: 0.95rem;
+	color: #e0e7ff; /* light blue text for softer contrast */
 }
+
 
 
