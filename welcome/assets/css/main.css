@@ -1820,37 +1820,35 @@ input, select, textarea {
 	margin: 2rem 0;
 }
 
-/* Each card */
-.card { 
-  background: #ffffff; 
-  border: 2px solid #cdddf5; /* light blue border */
-  padding: 1.25rem; 
-  border-radius: 12px; 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+/* Blue card style */
+.projects .card {
+  background: #1e3a8a;              /* deep blue background */
+  color: #fff;                      /* white text */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Hover effect */
-.card:hover { 
-  transform: translateY(-4px); 
-  box-shadow: 0 6px 16px rgba(17, 68, 136, 0.2); 
-  border-color: #4a90e2; /* nice blue accent */
+.projects .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Project titles */
-.card h3 { 
-  margin: 0 0 0.5rem; 
-  font-size: 1.2rem; 
-  color: #114488; /* deep blue title */
+/* Title inside card */
+.projects .card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
-/* Project description */
-.card p { 
-  margin: 0; 
-  font-size: 0.95rem; 
-  color: #444;
+/* Description */
+.projects .card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #e0e7ff; /* light blue text for softer contrast */
 }
-
-
 
 
