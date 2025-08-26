@@ -1795,7 +1795,7 @@ input, select, textarea {
 	background: transparent;
 	border-radius: 8px;
 	margin: 10px 0;
-	border: 1px solid #ccc;    /* optional: thin border so you can still see the outline */
+	border: none;
 	overflow: hidden;
 }
 
@@ -1806,7 +1806,8 @@ input, select, textarea {
 	line-height: 30px;
 	padding-left: 10px;
 	font-size: 14px;
-	border-radius: 8px 0 0 8px;
+	border: none;             /* 👈 bar has no border */
+	border-radius: 8px;       /* keeps rounded ends if you want */
 	transition: width 1s ease-in-out;
 }
 
@@ -1849,5 +1850,6 @@ input, select, textarea {
   font-size: 0.95rem; 
   color: #444;
 }
+
 
 
