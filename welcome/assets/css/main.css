@@ -1822,18 +1822,26 @@ input, select, textarea {
 
 /* Blue card style */
 .projects .card {
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
 	background: #4A90E2;              /* deep blue background */
 	color: #fff;                      /* white text */
 	border-radius: 12px;
 	padding: 20px;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	position: relative;
 }
 
-/* Hover effect */
+/* On hover: card grows, text fully visible */
 .projects .card:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  aspect-ratio: auto;       /* let height grow naturally */
+  z-index: 10;              /* bring hovered card above others */
+}
+
+.projects .card:hover p {
+  -webkit-line-clamp: unset; /* remove line clamp */
+  overflow: visible;
 }
 
 /* Title inside card */
@@ -1849,7 +1857,14 @@ input, select, textarea {
 	margin: 0;
 	font-size: 0.95rem;
 	color: #e0e7ff; /* light blue text for softer contrast */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;    /* show up to 5 lines initially */
+	-webkit-box-orient: vertical;
+	transition: all 0.3s ease;
 }
+
 
 
 
