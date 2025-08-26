@@ -1791,22 +1791,23 @@ input, select, textarea {
 }
 
 .bar-container {
-  width: 100%;
-  background: transparent;
-  border-radius: 8px;
-  margin: 10px 0;
-  overflow: hidden;
+	width: 100%;
+	background: transparent;
+	border-radius: 8px;
+	margin: 10px 0;
+	border: 1px solid #ccc;    /* optional: thin border so you can still see the outline */
+	overflow: hidden;
 }
 
 .bar {
-  height: 30px;
-  background: linear-gradient(90deg, #4caf50, #81c784);
-  color: #fff;
-  line-height: 30px;
-  padding-left: 10px;
-  font-size: 14px;
-  white-space: nowrap;
-  transition: width 1s ease-in-out;
+	height: 30px;
+	background: linear-gradient(90deg, #4caf50, #81c784);
+	color: #fff;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 14px;
+	border-radius: 8px 0 0 8px;
+	transition: width 1s ease-in-out;
 }
 
 /* Projects */
@@ -1848,4 +1849,5 @@ input, select, textarea {
   font-size: 0.95rem; 
   color: #444;
 }
+
 
