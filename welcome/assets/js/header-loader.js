@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
           skill_09: 'skill_09',
           skill_10: 'skill_10',
           skill_11: 'skill_11',
+          projects_00: 'projects_00',
           projects_01_0: 'projects_01_0',
           projects_01_1: 'projects_01_1',  
           projects_02_0: 'projects_02_0',
@@ -155,6 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
           projects_07_1: 'projects_07_1',
           projects_08_0: 'projects_08_0',
           projects_08_1: 'projects_08_1',
+          projects_08_0: 'projects_09_0',
+          projects_08_1: 'projects_09_1',
+          projects_08_0: 'projects_10_0',
+          projects_08_1: 'projects_10_1',
+          projects_08_0: 'projects_11_0',
+          projects_08_1: 'projects_11_1',
           profile_photo: 'profile-photo',
           // Add more as needed
         };
