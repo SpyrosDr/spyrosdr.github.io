@@ -32,14 +32,18 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log('🔐 ENTER pressed, checking password...');
 
       firebase.database().ref('auth/sharedPassword').once('value').then(snapshot => {
-        const correctPassword = snapshot.val();
-
-        if (typed === correctPassword) {
+        const stored = snapshot.val();
+      
+        // Normalize into an array (works if Firebase returns object or array)
+        const passwords = Array.isArray(stored) ? stored : Object.values(stored || {});
+      
+        const ok = passwords.some(p => String(p).trim() === typed);
+      
+        if (ok) {
           sessionStorage.setItem('authenticated', 'true');
           status("success");
-
           setTimeout(() => {
-             window.location.href = '/welcome';
+            window.location.href = '/welcome';
           }, 2000);
         } else {
           failAndReset();
